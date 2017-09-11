@@ -5,14 +5,14 @@ var calc = new calc_1.Calculator();
 var firstNumber;
 var secondNumber;
 var operation;
-$(document).ready(function () {
-    var firstNumber = $('#firstNumber');
-    var secondNumber = $('#firstNumber');
-    var button = $('.button-operation');
-    button.click(function () {
-        alert(calc.calculate(String(button.val), Number(firstNumber.val), Number(secondNumber.val)));
-    });
-});
+// $(document).ready(() => {
+//     const firstNumber: JQuery<HTMLInputElement> = $('#firstNumber') as JQuery<HTMLInputElement>;
+//     const secondNumber: JQuery<HTMLInputElement> = $('#firstNumber') as JQuery<HTMLInputElement>;
+//     const button: JQuery<HTMLButtonElement> = $('.button-operation') as JQuery<HTMLButtonElement>;
+//     button.click(()=>{
+//         alert(calc.calculate(String(button.val), Number(firstNumber.val), Number(secondNumber.val)));
+//     })
+// });
 console.log(calc.calculate("+", 1000, 2));
 console.log(calc.calculate("*", 1, 2));
 console.log(calc.calculate("/", 12342, 2));

@@ -6,16 +6,16 @@ var secondNumber: number;
 var operation: string;
 
 
-$(document).ready(() => {
-    const firstNumber: JQuery<HTMLInputElement> = $('#firstNumber') as JQuery<HTMLInputElement>;
-    const secondNumber: JQuery<HTMLInputElement> = $('#firstNumber') as JQuery<HTMLInputElement>;
+// $(document).ready(() => {
+//     const firstNumber: JQuery<HTMLInputElement> = $('#firstNumber') as JQuery<HTMLInputElement>;
+//     const secondNumber: JQuery<HTMLInputElement> = $('#firstNumber') as JQuery<HTMLInputElement>;
 
-    const button: JQuery<HTMLButtonElement> = $('.button-operation') as JQuery<HTMLButtonElement>;
+//     const button: JQuery<HTMLButtonElement> = $('.button-operation') as JQuery<HTMLButtonElement>;
 
-    button.click(()=>{
-        alert(calc.calculate(String(button.val), Number(firstNumber.val), Number(secondNumber.val)));
-    })
-});
+//     button.click(()=>{
+//         alert(calc.calculate(String(button.val), Number(firstNumber.val), Number(secondNumber.val)));
+//     })
+// });
 
 
 
