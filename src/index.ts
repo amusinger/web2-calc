@@ -1,7 +1,6 @@
 import { Calculator } from "./calc";
 
 const calc = new Calculator();
-
 var firstNumber: number;
 var secondNumber: number;
 var operation: string;
@@ -13,28 +12,24 @@ $(document).ready(() => {
 
     const button: JQuery<HTMLButtonElement> = $('.button-operation') as JQuery<HTMLButtonElement>;
 
-    console.log(button.val, firstNumber.val, secondNumber.val)
+    button.click(()=>{
+        alert(calc.calculate(String(button.val), Number(firstNumber.val), Number(secondNumber.val)));
+    })
 });
 
-window.onload = () => {
-    var el = document.getElementById('firstNumber') as HTMLInputElement;
-    firstNumber = Number(el.value);
 
-    var el2 = document.getElementById('secondNumber') as HTMLInputElement;
-    secondNumber = Number(el2.value);    
-};
-
-console.log(calc.calculate("+", firstNumber,secondNumber));
-// console.log(calc.calculate("*", 1,2));
-// console.log(calc.calculate("/", 12342,2));
-// console.log(calc.calculate("-", 1,2234));
-//document.getElementById('firstNumber');
-//secondNumber = Number(document.getElementById('secondNumber'));
 
 console.log(calc.calculate("+", 1000,2));
 console.log(calc.calculate("*", 1,2));
 console.log(calc.calculate("/", 12342,2));
 console.log(calc.calculate("-", 1,2234));
+
+//console.log(calc.calculate("+", firstNumber,secondNumber));
+
+// console.log(calc.calculate("*", 1,2));
+// console.log(calc.calculate("/", 12342,2));
+// console.log(calc.calculate("-", 1,2234));
+
 
 
 // console.log(calc.sum(1,2));
